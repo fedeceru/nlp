@@ -1,0 +1,23 @@
+[project]
+name = "nlp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fedeceru", email = "federico.cerutti03@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy==2.5.3",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "torch==2.14.0",
+]
+
+[project.scripts]
+nlp = "nlp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
